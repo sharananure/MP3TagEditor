@@ -9,24 +9,20 @@ MP3 Tag Editor is a command-line tool for reading, writing, and editing ID3v2 ta
 - Write new dummy tags
 - Error handling for invalid files
 
-# Compile the source code
-gcc main.c id3_reader.c id3_writer.c id3_utils.c error_handling.c -o mp3tagreader
+## Compile the source code
+```
+gcc main.c id3_reader.c id3_writer.c id3_utils.c error_handling.c -o mp3tagreader  (or) gcc *.c
 ```
 
 ## Usage
-```sh
-# View help
-./mp3tagreader -h
-
-# View MP3 tags
-./mp3tagreader -v filename.mp3
-
-# Write dummy tags
-./mp3tagreader -w filename.mp3
-
-# Edit a specific tag (e.g., Title)
-./mp3tagreader -e title filename.mp3 "New Title"
 ```
+View help                           ->  ./mp3tagreader -h
+View MP3 tags                       ->  ./mp3tagreader -v filename.mp3
+Write dummy tags                    ->  ./mp3tagreader -w filename.mp3
+Edit a specific tag (e.g., Title)   ->  ./mp3tagreader -e title filename.mp3 "New Title"
+
+```
+
 
 ## File Structure
 ```
